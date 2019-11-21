@@ -1,0 +1,9 @@
+
+tsquid:S1450"XRemove the "mKeyBoard" field and declare it as a local variable in the relevant methods.(œßÓ¤8×çöèè-
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¨µ8×çöèè-
+`squid:S2147"DCombine this catch with the one at line 87, which has the same body.(Å¡ß8×çöèè-
+asquid:S2147"ECombine this catch with the one at line 100, which has the same body.(Å¡ß8×çöèè-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8×çöèè-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8×çöèè-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8×çöèè-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8×çöèè-

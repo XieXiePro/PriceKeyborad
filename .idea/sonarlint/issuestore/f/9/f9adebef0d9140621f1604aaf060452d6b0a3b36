@@ -1,0 +1,21 @@
+
+zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥©Â•ûÿÿÿÿ8ëúèè-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(“²ÀÈ8ëúèè-
+?squid:S2119"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8ëúèè-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëúèè-
+‰"squid:ClassVariableVisibilityCheck"VMake mOnOkClick a static final constant or non-public and provide accessors if needed.(²™Ï¢8ëúèè-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëúèè-
+’"squid:ClassVariableVisibilityCheck"ZMake mOnCancelClick a static final constant or non-public and provide accessors if needed.(è‘¼Ëıÿÿÿÿ8ëúèè-
+œsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(èë­8ëúèè-
+ssquid:S00114"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(÷¡š­úÿÿÿÿ8ëúèè-
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÃÔ¹úÿÿÿÿ8ëúèè-
+Ksquid:S1066"/Merge this if statement with the enclosing one.(¹¸Õ²8ëúèè-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•œÇÆ8ëúèè-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´ƒÅñ8ëúèè-
+fsquid:S2147"ECombine this catch with the one at line 151, which has the same body.(¼¯•¶ùÿÿÿÿ8ëúèè-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–õ½à8ëúèè-
+asquid:S2147"ECombine this catch with the one at line 151, which has the same body.(”ı¾8ëúèè-
+zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÕÿÖ§ÿÿÿÿÿ8ëúèè-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(µŒœ¡8ëúèè-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëúèè-
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(°å¹Ô8ëúèè-

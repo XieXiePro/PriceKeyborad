@@ -12,8 +12,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     TextView tvPrice;
     LinearLayout llPrice;
-    EditText etPrice;
-    EditText etOrginalPrice;
+    TextView etPrice;
+    TextView etOrginalPrice;
     EditText etFreight;
     PriceKeyBoardView keyboardView;
     LinearLayout llPriceSelect;
@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tvPrice = findViewById(R.id.tv_price);
         llPrice = (LinearLayout) findViewById(R.id.ll_price);
-        etPrice = (EditText) findViewById(R.id.et_price);
-        etOrginalPrice = (EditText) findViewById(R.id.et_orginal_price);
+        etPrice = (TextView) findViewById(R.id.et_price);
+        etOrginalPrice = (TextView) findViewById(R.id.et_orginal_price);
         etFreight = (EditText) findViewById(R.id.et_freight);
         keyboardView = (PriceKeyBoardView) findViewById(R.id.keyboard_view);
         llPriceSelect = (LinearLayout) findViewById(R.id.ll_price_select);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onOkClick() {
                 if (validate()) {
                     llPriceSelect.setVisibility(View.GONE);
-                    tvPrice.setText(etPrice.getText() + "/价格，" + etOrginalPrice.getText() + "/原价，" + etFreight.getText() + "/运费");
+                    tvPrice.setText("最终工资" + etFreight.getText());
                 }
             }
         });
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         llPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                keyboardUtil.attachTo(etPrice);
+                keyboardUtil.attachTo(etFreight);
                 etPrice.setFocusable(true);
                 etPrice.setFocusableInTouchMode(true);
                 etPrice.requestFocus();
@@ -59,20 +59,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        etPrice.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                keyboardUtil.attachTo(etPrice);
-                return false;
-            }
-        });
-        etOrginalPrice.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                keyboardUtil.attachTo(etOrginalPrice);
-                return false;
-            }
-        });
         etFreight.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -83,16 +69,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean validate() {
-        if (etPrice.getText().toString().equals("")) {
-            Toast.makeText(getApplication(), "价格不能为空", Toast.LENGTH_SHORT).show();
-            return false;
-        } else if (etOrginalPrice.getText().toString().equals("")) {
-            Toast.makeText(getApplication(), "原价不能为空", Toast.LENGTH_SHORT).show();
-            return false;
-        } else if (etFreight.getText().toString().equals("")) {
-            Toast.makeText(getApplication(), "运费不能为空", Toast.LENGTH_SHORT).show();
+        //判断是否在调整范围
+        if (etFreight.getText().toString().equals("")) {
+            Toast.makeText(getApplication(), "调整值不能为空", Toast.LENGTH_SHORT).show();
             return false;
         }
+        //最终工资等于基本工资+调整值
+//        int etFreight.getText().toString().startsWith("");
+//        etOrginalPrice.setText();
         return true;
     }
 
